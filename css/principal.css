@@ -1,32 +1,35 @@
 body{
 
 }
-.logo img{
-  	width: 220px;
+.logo{
+    margin-top: 60px;
+}
+.imagem-logo img{
+    width: 220px;
 }
 .retirar-fundo{
-	background-color: transparent !important;
+    background-color: transparent !important;
     border-color: transparent !important;
     margin-bottom: 0 !important;
 }
 a{
-	color: #000000 !important;
-	text-decoration: none !important;
+    color: #000000 !important;
+    text-decoration: none !important;
 }
 .seta-slide{
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 .cabecalho{
-	background-color: #000000;
-	color: #FFFFFF;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 .copyright{
-	text-align: center;
+    text-align: center;
 }
 .lista li{
-	list-style: none;
+    list-style: none;
 }
 .social-media{
-	font-size: 25px;
-	text-align: right;
+    font-size: 25px;
+    text-align: right;
 }
