@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Fita K Sete</title>
+        <title>Fita K Sete - 24h de música todos os dias!</title>
 
         <!-- CSS Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,24 +14,28 @@
         <!-- Fonte -->
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-        
     </head>
     <body>
 
-        <!-- Cabecalho -->
-        <header class="cabecalho navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <audio controls="controls" autoplay="autoplay">
-                            <source src="music/3030_vai-la.mp3" type="audio/mpeg">
-                        </audio>
+        <div class="banner-principal">
+            <!-- Cabecalho -->
+            <header class="cabecalho navbar-fixed-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="walkman">
+                                <h3>Lado A</h3>
+                            </div>
+                            <div class="player-html">
+                                <audio controls="controls" autoplay="autoplay">
+                                    <source src="music/liniker_zero.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-
-        <div class="banner-principal">
+            </header>
+        
             <!-- Logo -->
             <section class="logo">
                 <div class="container">
@@ -68,14 +71,15 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A Fita <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#sobre">Sobre</a></li>
-                                        <li><a href="#parceiros">Parceiros</a></li>
-                                        <li><a href="#seja-um-parceiro">Seja um Parceiros</a></li>
+                                        <li><a href="#parceiros">Nossos Amigos Parceiros</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#seja-um-parceiro">Seja um Amigo Parceiro</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#programacao">Programação</a></li>
                                 <li><a href="#podcast">Podcast</a></li>
                                 <li><a href="#localizacao">Localização</a></li>
-                                <li><a href="#contato">Contato</a></li>
+                                <li><a href="#contato">Fale com a Fita</a></li>
                             </ul>
                         </div>
 
@@ -90,62 +94,15 @@
             </section>
         </div>
 
-        <!-- Slide -->
-        <!--<section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="img/banner1.jpg" alt="Banner1">
-                                    <div class="carousel-caption">
-                                        <h3>É só dar Play e mergulhar no som!</h3>
-                                        <p>Este é um paragrafo de teste.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/banner2.jpg" alt="Banner2">
-                                    <div class="carousel-caption">
-                                        <h3>Let's Dance (Tributo a David Bowie)</h3>
-                                        <p>Este é um paragrafo de teste.</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/banner3.jpg" alt="Banner3">
-                                    <div class="carousel-caption">
-                                        <h3>Crianças realizam evento pela paz mundial!</h3>
-                                        <p>Este é um paragrafo de teste.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left seta-slide" aria-hidden="true"></span>
-                                <span class="sr-only">Anterior</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right seta-slide" aria-hidden="true"></span>
-                                <span class="sr-only">Próximo</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
         <!-- Sobre -->
-        <section>
+        <section id="sobre" class="sobre">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <a name="sobre"><h3>Sobre</h3></a>
+                        <div class="titulo-sobre">
+                            <h3>Sobre Nós</h3>
+                            <h4>Somos apaixonados por Música <3</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -160,12 +117,14 @@
         </section>
 
         <!-- Parceiros -->
-        <section>
+        <section id="parceiros" class="parceiros">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <hr>
-                        <a name="parceiros"><h3>Parceiros</h3></a>
+                        <div class="titulo-parceiros">
+                            <h3>Nossos Amigos Parceiros</h3>
+                            <h4>Conheça abaixo nossos amigos parceiros:</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -197,12 +156,14 @@
         </section>
 
         <!-- Seja um Parceiro -->
-        <section>
+        <section id="seja-um-parceiro" class="seja-um-parceiro">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <hr>
-                        <a name="seja-um-parceiro"><h3>Seja um Parceiro</h3></a>
+                        <div class="titulo-seja-um-parceiro">
+                            <h3>Seja um Amigo Parceiro</h3>
+                            <h4>Conheça os benefícios e seja também um amigo parceiro da Fita :)</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -214,16 +175,21 @@
         </section>
 
         <!-- Programação -->
-        <section>
+        <section id="programacao" class="programacao">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <hr>
-                        <a name="programacao"><h3>Programação</h3></a>
+                        <div class="titulo-programacao">
+                            <h3>Programação</h3>
+                            <h4>Feita por Nós para você ser + feliz todos os dias!</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
+                        <div class="titulo-ladoa">
+                            <h4>Lado A</h4>
+                        </div>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -270,6 +236,328 @@
                                         commodo consequat.</div>
                                 </div>
                             </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                            3h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                            4h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                            5h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                            6h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse7" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                                            7h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse8" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                                            8h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse9" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                                            9h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse10" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                                            10h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse11" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                                            11h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse12" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="titulo-ladoa">
+                            <h4>Lado B</h4>
+                        </div>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                                            12h - Elvis Forever
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse13" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                                            13h - I Am The Blues
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse14" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+                                            14h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse15" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
+                                            15h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse16" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">
+                                            16h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse17" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">
+                                            17h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse18" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">
+                                            18h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse19" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">
+                                            19h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse20" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">
+                                            20h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse21" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse22">
+                                            21h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse22" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse23">
+                                            22h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse23" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse24">
+                                            23h - Mistério do Planeta
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse24" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat.</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -277,41 +565,52 @@
         </section>
 
         <!-- Podcast -->
-        <section>
+        <section id="podcast" class="podcast">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <hr>
-                        <a name="podcast"><h3>Podcast</h3></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Contato -->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr>
-                        <a name="localizacao"><h3>Localização</h3></a>
+                        <div class="titulo-podcast">
+                            <h3>Podcast</h3>
+                            <h4>Não conseguiu acompanhar ao vivo? Ouça nosso Podcast!</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.811003097353!2d-46.551111684416966!3d-21.787574504370014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9dd2210ab1485%3A0xd422b963b846dd8b!2zUi4gQWPDoWNpYSwgMzI4IC0gU8OjbyBKb8OjbywgUG_Dp29zIGRlIENhbGRhcyAtIE1HLCAzNzcwMS0xMjU!5e0!3m2!1spt-BR!2sbr!4v1460405959316" width="1170" height="305" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <p>Vestibulum efficitur eros eu sem varius, non dignissim justo egestas. Nunc vel nulla pulvinar, lacinia eros vitae, dignissim nulla. Fusce massa sem, sagittis nec tincidunt et, dignissim non sapien. Aliquam tincidunt erat vel eleifend euismod. Vivamus sed scelerisque sem, eu molestie lectus. Fusce a faucibus est. Aliquam erat volutpat. In pharetra augue quis ex pretium, at tristique tortor luctus. Integer elementum egestas libero, in vehicula dui efficitur sit amet. Nunc nec gravida quam. Nam posuere diam rutrum nisl porta porta. Curabitur fringilla risus ut odio luctus ullamcorper. Sed facilisis sapien eu vehicula tempus. Aenean pharetra semper aliquet. Nunc sem dui, suscipit sit amet justo a, ullamcorper congue nisl. Fusce auctor, nibh vitae molestie auctor, lacus leo rutrum turpis, at ornare ipsum odio a eros.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contato -->
-        <section>
+        <!-- Localização -->
+        <section id="localizacao" class="localizacao">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <hr>
-                        <a name="contato"><h3>Contato</h3></a>
+                        <div class="titulo-localizacao">
+                            <h3>Localização</h3>
+                            <h4>Aqui fica nosso Walkman x)</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.811003097353!2d-46.551111684416966!3d-21.787574504370014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9dd2210ab1485%3A0xd422b963b846dd8b!2zUi4gQWPDoWNpYSwgMzI4IC0gU8OjbyBKb8OjbywgUG_Dp29zIGRlIENhbGRhcyAtIE1HLCAzNzcwMS0xMjU!5e0!3m2!1spt-BR!2sbr!4v1460405959316" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fale com a Fita -->
+        <section id="contato" class="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titulo-contato">
+                            <h3>Fale com a Fita</h3>
+                            <h4>Gostou da Fita? Que tal deixar uma dica musical? Deixe um recado abaixo!</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -365,33 +664,48 @@
 
         <!-- Rodapé -->
         <footer>
-            <div class="container">
-                <div class="row">
-                    <hr>
-                    <div class="col-md-12">
-                        <div class="coluna-links">
-                            <ul class="lista">
-                                <li><a href="#sobre">sobre</a></li>
-                                <li><a href="#parceiros">parceiros</a></li>
-                                <li><a href="#seja-parceiro">seja um parceiro</a></li>
-                                <li><a href="#programacao">programação</a></li>
-                                <li><a href="#podcast">podcast</a></li>
-                            </ul>
+            <section class="rodape">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="frase-musical">
+                                <h5>"How many times can a man turn his head pretend that he just doesn't see?</h5>
+                                <h5>The answer, my friend, is blowin' in the wind..."</h5>
+                                <h5>Bob Dylan</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="coluna-links">
+                                <ul class="lista-links">
+                                    <li><a href="index.php">início</a></li>
+                                    <li><a href="#sobre">sobre</a></li>
+                                    <li><a href="#parceiros">nossos amigos parceiros</a></li>
+                                    <li><a href="#seja-um-parceiro">seja um amigo parceiro</a></li>
+                                    <li><a href="#programacao">programação</a></li>
+                                    <li><a href="#podcast">podcast</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="copyright">
-                            <h5>Todos os direitos reservados 2016 ® Fita K Sete</h5>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <h4><small>Todos os direitos reservados 2016 ® Fita K Sete</small></h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </footer>
 
-        <!-- JS Bootstrap -->
+        <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- JS Bootstrap -->
         <script src="js/bootstrap.min.js"></script>
+        <!-- JPlayer -->
+        <script src="js/plugin/jquery.jplayer.min.js"></script>
+        <script src="js/player.js"></script>
     </body>
 </html>
