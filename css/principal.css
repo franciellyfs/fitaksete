@@ -2,15 +2,31 @@ body{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 22px;
+    color: #E41233;
 }
 p{
+    color: #000000;
     text-align: justify;
+}
+label{
+    color: #8A8A8A;
 }
 h2, h3, h4, h5, h6{
     font-family: 'Lato', sans-serif;
 }
 .logo{
+    height: 73px;
     margin-top: 58px;
+}
+.navbar-default .navbar-brand{
+    font-size: 20px;
+    color: #000000 !important;
+    font-weight: 700;
+}
+.navbar-default .navbar-nav>li>a{
+    font-size: 20px;
+    color: #000000 !important;
+    font-weight: 700;
 }
 .imagem-logo img{
     width: 220px;
@@ -23,6 +39,17 @@ h2, h3, h4, h5, h6{
 a{
     color: #FFFFFF;
     text-decoration: none !important;
+}
+a:focus, a:hover{
+    color: #E41233;
+}
+.panel-default>.panel-heading {
+    color: #000;
+    background-color: #D4D4D4;
+    border-color: #000;
+}
+.collapse.in {
+    background-color: rgb(241, 241, 241);
 }
 .seta-slide{
     color: #FFFFFF;
@@ -38,15 +65,15 @@ a{
     text-align: center;
 }
 .copyright small{
-    color: #2EB5B0;
+    color: #FFFFFF;
 }
 .lista-links li{
     list-style: none;
 }
 .social-media{
-    font-size: 25px;
+    font-size: 33px;
     text-align: right;
-    margin-top: -45px;
+    margin-top: -42px;
 }
 .icone-facebook{
     color: #45619E;
@@ -71,12 +98,15 @@ audio{
     float: left;
 }
 .banner-principal{
-    background: url(../img/fundo.jpg) no-repeat;
-    height: 954px;
+    background: url(../img/headphone2.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    //background: url(../img/headphone.jpg) no-repeat;
+    height: 950px;
 }
 .titulo{
-    font-family: 'Rock Salt', cursive;
-    color: #000000;
+    /*font-family: 'Rock Salt', cursive;*/
+    color: #E41233;
 }
 .walkman{
     text-align: right;
@@ -117,7 +147,7 @@ audio{
 }
 .titulo-parceiros{
     text-align: center;
-    border-color: #537F87;
+    border-color: #D4D4D4;
     border-style: solid;
     border-top: transparent;
     border-left: transparent;
@@ -134,7 +164,7 @@ audio{
 }
 .titulo-seja-um-parceiro{
     text-align: center;
-    border-color: #BC6575;
+    border-color: #D4D4D4;
     border-style: solid;
     border-top: transparent;
     border-left: transparent;
@@ -151,7 +181,7 @@ audio{
 }
 .titulo-programacao{
     text-align: center;
-    border-color: #172544;
+    border-color: #D4D4D4;
     border-style: solid;
     border-top: transparent;
     border-left: transparent;
@@ -180,7 +210,7 @@ audio{
 }
 .titulo-podcast{
     text-align: center;
-    border-color: #C59609;
+    border-color: #D4D4D4;
     border-style: solid;
     border-top: transparent;
     border-left: transparent;
@@ -197,7 +227,7 @@ audio{
 }
 .titulo-localizacao{
     text-align: center;
-    border-color: #676D69;
+    border-color: #D4D4D4;
     border-style: solid;
     border-top: transparent;
     border-left: transparent;
@@ -214,7 +244,7 @@ audio{
 }
 .titulo-contato{
     text-align: center;
-    border-color: #1E4253;
+    border-color: #D4D4D4;
     border-style: solid;
     border-top: transparent;
     border-left: transparent;
@@ -233,4 +263,38 @@ audio{
     text-align: center;
     vertical-align: center;
     margin-top: 55px;
+}
+.imagem-parceiro{
+    width: 251px;
+    height: 222px;
+}
+.imagem-parceiro img {
+    width: 251px;
+    height: 222px;
+}
+.titulo-chamada{
+    text-align: center;
+    margin-top: 470px;
+}
+.banner-principal .seta-baixo {
+    display: table;
+    margin: 30px auto;
+    cursor: pointer;   
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all .2s ease-out;
+}
+.banner-principal .seta-baixo:hover {
+    margin-top: 25px;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all .2s ease-out;
+}
+.banner-principal .seta-baixo i {
+    font-size: 40px;
+    color: #000;
 }

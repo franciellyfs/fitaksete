@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Fita K Sete - 24h de música todos os dias!</title>
+        <title>Fita K Sete: 24h de música</title>
 
         <!-- CSS Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +18,7 @@
     <body>
 
         <div class="banner-principal">
+            
             <!-- Cabecalho -->
             <header class="cabecalho navbar-fixed-top">
                 <div class="container">
@@ -46,6 +47,7 @@
                             </div>
                         </div>
                         <div class="col-md-8">
+                            
                         </div>
                     </div>
                 </div>
@@ -70,16 +72,16 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A Fita <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#sobre">Sobre</a></li>
-                                        <li><a href="#parceiros">Nossos Amigos Parceiros</a></li>
+                                        <li><a href="#sobre" id="sobre">Sobre</a></li>
+                                        <li><a href="#parceiros" id="parceiros">Nossos Amigos Parceiros</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="#seja-um-parceiro">Seja um Amigo Parceiro</a></li>
+                                        <li><a href="#seja-um-parceiro" id="seja-um-parceiro">Seja um Amigo Parceiro</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#programacao">Programação</a></li>
-                                <li><a href="#podcast">Podcast</a></li>
-                                <li><a href="#localizacao">Localização</a></li>
-                                <li><a href="#contato">Fale com a Fita</a></li>
+                                <li><a href="#programacao" id="programacao">Programação</a></li>
+                                <li><a href="#podcast" id="podcast">Podcast</a></li>
+                                <li><a href="#localizacao" id="localizacao">Localização</a></li>
+                                <li><a href="#contato" id="contato">Fale com a Fita</a></li>
                             </ul>
                         </div>
 
@@ -92,6 +94,24 @@
                     </div>
                 </nav>
             </section>
+            
+            <!-- Titulo -->
+            <section class="titulo-chamada">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Ao Infinito e Além com as melhores Playlists de Música</h2>
+                            <h3>Explore!</h3>
+                            <h4><small>não tem propaganda, é gratuito e são 24h de música</small></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="seta-baixo">
+                <i class="glyphicon glyphicon-chevron-down"></i>
+            </div>
+            
         </div>
 
         <!-- Sobre -->
@@ -129,27 +149,35 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <a href="#" class="thumbnail">
-                            <img src="img/parceiro1.jpg" alt="Parceiro1">
-                        </a>
+                        <div class="imagem-parceiro">
+                            <a href="#" class="thumbnail">
+                                <img src="img/parceiros/ancora.jpg" alt="Parceiro1">
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <a href="#" class="thumbnail">
-                            <img src="img/parceiro1.jpg" alt="Parceiro1">
-                        </a>
+                        <div class="imagem-parceiro">
+                            <a href="#" class="thumbnail">
+                                <img src="img/parceiros/o-pasquim.jpg" alt="Parceiro1">
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <a href="#" class="thumbnail">
-                            <img src="img/parceiro1.jpg" alt="Parceiro1">
-                        </a>
+                        <div class="imagem-parceiro">
+                            <a href="#" class="thumbnail">
+                                <img src="img/parceiros/corrente-cultural.jpg" alt="Parceiro1">
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <a href="#" class="thumbnail">
-                            <img src="img/parceiro1.jpg" alt="Parceiro1">
-                        </a>
+                        <div class="imagem-parceiro">
+                            <a href="#" class="thumbnail">
+                                <img src="img/parceiros/guarda-chuva.png" alt="Parceiro1">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -678,11 +706,11 @@
                             <div class="coluna-links">
                                 <ul class="lista-links">
                                     <li><a href="index.php">início</a></li>
-                                    <li><a href="#sobre">sobre</a></li>
-                                    <li><a href="#parceiros">nossos amigos parceiros</a></li>
-                                    <li><a href="#seja-um-parceiro">seja um amigo parceiro</a></li>
-                                    <li><a href="#programacao">programação</a></li>
-                                    <li><a href="#podcast">podcast</a></li>
+                                    <li><a href="#sobre" id="sobre-footer">sobre</a></li>
+                                    <li><a href="#parceiros" id="parceiros-footer">nossos amigos parceiros</a></li>
+                                    <li><a href="#seja-um-parceiro" id="seja-um-parceiro-footer">seja um amigo parceiro</a></li>
+                                    <li><a href="#programacao" id="programacao-footer">programação</a></li>
+                                    <li><a href="#podcast" id="podcast-footer">podcast</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -707,5 +735,7 @@
         <!-- JPlayer -->
         <script src="js/plugin/jquery.jplayer.min.js"></script>
         <script src="js/player.js"></script>
+        <!-- Principal -->
+        <script src="js/principal.js"></script>
     </body>
 </html>
